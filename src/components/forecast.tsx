@@ -26,9 +26,8 @@ export const Forecast: React.FC<WeeklyForecastProps> = ({ forecast }) => {
                         const dayOfWeek = daysOfWeek[date.getDay()];
 
                         return (
-                            <div className="flex-shrink-0">
+                            <div className="flex-shrink-0" key={index}>
                                 <ForecastCard
-                                    key={index}
                                     dayOfWeek={dayOfWeek}
                                     icon={day.day.condition.icon}
                                     conditionText={day.day.condition.text}

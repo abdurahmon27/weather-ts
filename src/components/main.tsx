@@ -30,8 +30,14 @@ export const Main = () => {
         getWeather(location);
     }, [location]);
 
+
+    console.log(weather);
+
     return (
-        <div className="overflow-visible container mx-auto flex items-center justify-center flex-col py-5">
+        <div className="overflow-visible container mx-auto flex items-center justify-center flex-col py-5 gap-3">
+            <h1 className='font-bold font-sans text-3xl'>
+                {weather?.location.name}, {weather?.location.country}
+            </h1>
             {error && <p>Error: {error}</p>}
             {loading && <p>Loading...</p>}
             {!loading && !error && (
