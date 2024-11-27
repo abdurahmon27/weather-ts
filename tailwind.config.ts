@@ -12,6 +12,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        clouds: "url('/bg.webp')",
+      },
+      backgroundColor: {
+        card: "#0000005b",
+      },
     },
   },
   plugins: [],
