@@ -8,7 +8,7 @@ import { Forecast } from './forecast';
 import CityClock from './cityClock';
 
 export const Main = () => {
-    const [location, setLocation] = useState<string>('London');
+    const location = 'London';
     const [weather, setWeather] = useState<ForecastData | null>(null);
     const [error, setError] = useState<string | null>(null);
     const [loading, setLoading] = useState<boolean>(false);
