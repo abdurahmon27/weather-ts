@@ -19,7 +19,7 @@ export const Main = () => {
         try {
             const data = await fetchWeatherData(location);
             setWeather(data);
-            // @typescript-eslint/no-explicit-any
+
         } catch (err: any) {
             setError(err.message);
         } finally {
