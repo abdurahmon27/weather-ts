@@ -1,7 +1,6 @@
 import axios, { AxiosError } from "axios";
 import { ForecastData } from "@/types/index";
-
-const API_KEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
+import { API_KEY } from "@/constants/index";
 
 if (!API_KEY) {
   throw new Error("Missing Weather API Key");
