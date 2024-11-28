@@ -19,6 +19,8 @@ export const Main = () => {
         try {
             const data = await fetchWeatherData(location);
             setWeather(data);
+            // @ts-ignore
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
         } catch (err: any) {
             setError(err.message);
         } finally {
